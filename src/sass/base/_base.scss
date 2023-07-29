@@ -1,0 +1,25 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #777777;
+    background-color: white;
+    letter-spacing: 0.2rem;
+    padding: 5rem;
+}
+
+.container {
+    background-color: #F7F7F7;
+}
