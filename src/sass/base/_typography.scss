@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $color-grey;
+    letter-spacing: 0.2rem;
+    background-color: white;
+    padding: 5rem;
+}
+
 .first-title {
     color: white;
     &__primary {
@@ -13,4 +29,23 @@
         font-weight: 300;
         letter-spacing: 0.5rem;
     }
+}
+
+.two-title {
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #C3956A 3.65%, #A14F03 100%);
+    background-clip: text;
+    color: transparent;
+    transition: all .3s;
+    &:hover {
+        transform: rotate(4deg);
+    }
+}
+
+.three-title {
+    font-size: 2rem;
+    font-weight: 700;
 }

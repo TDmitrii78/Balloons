@@ -1,0 +1,27 @@
+.about {
+    padding: 8rem 10rem 5rem 10rem;
+    &__grid {
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 6.7rem;
+    }
+    &__two-title {
+        display: block;
+        text-align: center;
+    }
+    &__three-title {
+        &:not(:first-child) {
+            margin-top: 4.5rem;
+        }
+    }
+    &__text {
+        &:not(:first-child) {
+            margin-top: 1rem;
+        }
+    }
+    &__btn-text {
+        margin-top: 4.4rem;
+    }
+}
