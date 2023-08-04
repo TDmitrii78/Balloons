@@ -36,10 +36,11 @@ body {
     font-weight: 800;
     letter-spacing: 1rem;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #C3956A 3.65%, #A14F03 100%);
+    background: $gradien-brown-light-brown-darck;
     background-clip: text;
     color: transparent;
     transition: all .3s;
+    backface-visibility: hidden;
     &:hover {
         transform: rotate(4deg);
     }
@@ -48,4 +49,5 @@ body {
 .three-title {
     font-size: 2rem;
     font-weight: 700;
+    text-transform: uppercase;
 }

@@ -6,5 +6,9 @@ $Black: #000000;
 $color-white: #FAFAFA;
 $color-grey: #777777;
 
+//градиент
+$gradient-brown-black: linear-gradient(90deg, #BA8554 0%, #000 100%);
+$gradien-brown-light-brown-darck: linear-gradient(90deg, #C3956A 3.65%, #A14F03 100%);
+
 //тень кнопок
 $b-shadow: (0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.3));

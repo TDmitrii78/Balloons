@@ -1,0 +1,25 @@
+.card {
+    padding: 2.5rem 1.5rem;
+    border-radius: .5rem;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: $b-shadow;
+    text-align: center;
+    transition: all .3s;
+    &__icon-wrapper {
+        font-size: 6.3rem;
+        color: transparent;
+    }
+    &__icon {
+        background-image: $gradien-brown-light-brown-darck;
+        background-clip: text;
+    }
+    &__title {
+        margin-top: 2rem;
+    }
+    &__description {
+        margin-top: 1rem;
+    }
+    &:hover {
+        transform: translateY(-2rem) scale(1.03);
+    }
+}
