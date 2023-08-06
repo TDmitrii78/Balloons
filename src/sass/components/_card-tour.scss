@@ -1,0 +1,75 @@
+.card-tour {
+    position: relative;
+    perspective: 150rem;
+    width: 100%;
+    height: 52rem;
+    &__front-side {
+        position: absolute;
+        box-shadow: $b-shadow;
+        transition: all .7s;
+        backface-visibility: hidden;
+        border-radius: .5rem;
+        overflow: hidden;
+    } 
+    &__img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+        background-color: $Brown-color-light;
+        img {
+            width: 100%;
+            mix-blend-mode: hard-light;
+        }
+    }  
+    &__description {
+        padding: 4.5rem 1rem 5.5rem 1rem;
+        text-align: center;
+        li {
+            display: inline-block;
+            border-bottom: 0.1rem solid $color-grey;
+            &:not(:first-child) {
+                margin-top: 2rem;
+            }
+        }
+    }
+    &__four-title {
+        position: absolute;
+        top: 17rem;
+        right: 0;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    &__back-side {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 10rem 3.2rem;
+        background-color:black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-shadow: $b-shadow;
+        transition: all .7s;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        border-radius: .5rem;
+        background: linear-gradient(135deg, #C3956A 3.65%, #A14F03 100%);
+    }
+    &__text {
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    &__price {
+        font-size: 6rem;
+        color: white;
+        font-weight: 500;
+    }
+    &:hover {
+        .card-tour__front-side {
+            transform: rotateY(-180deg);
+        }
+        .card-tour__back-side {
+            transform: rotateY(0deg);
+        }
+    }
+}

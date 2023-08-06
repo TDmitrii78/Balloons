@@ -51,3 +51,19 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.four-title {
+    font-size: 28px;
+    font-weight: 300;
+    color: white;
+    &__span {
+        display: inline-block;
+        background: $gradien-brown-light-brown-darck;
+        &_1 {
+            padding: 1.5rem 2rem 0 2rem;
+        }
+        &_2 {
+            padding: 0 2rem 1.5rem 2rem;
+        }
+    }
+}

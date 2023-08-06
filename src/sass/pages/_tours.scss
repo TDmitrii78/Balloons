@@ -1,0 +1,14 @@
+.tours {
+    padding: 8rem 10rem;
+    text-align: center;
+    &__list {
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 6rem;
+    }
+    &__btn {
+        margin-top: 8rem;
+    }
+}
