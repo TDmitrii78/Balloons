@@ -9,5 +9,7 @@ ul {
 }
 
 .container {
+    position: relative;
     background-color: #F7F7F7;
+    z-index: 0;
 }
