@@ -1,7 +1,7 @@
 .btn {
-    position: relative;
-    transition: all .3s;
-    &:link, &:visited {
+    &, &:link, &:visited {
+        position: relative;
+        transition: all .3s;
         display: inline-block;
         width: 27.7rem;
         padding: 1.5rem 0;
@@ -16,14 +16,14 @@
     }
     &:hover {
         box-shadow: $b-shadow;
-        transform: translateY(-0.4rem) scale(1.3);
+        transform: translateY(-0.4rem);
         &::after {
             transform: scale(1.3, 2);
             opacity: 0;
         }
     }
     &:active {
-        transform: translateY(0.2rem);
+        transform: translateY(-0.2rem);
         box-shadow: $b-shadow;
     }
     &::after {
@@ -39,24 +39,15 @@
         z-index: -1;
         border-radius: 5rem
     }
+    &_brown {
+        &, &:link, &:visited{
+            background: $Brown-color-light;
+            color: $color-white;
+            border: none;
+        }
+        &::after {
+            background: $Brown-color-light;
+        }
+    }
 }
 
-.btn-text {
-    display: inline-block;
-    background-color: transparent;
-    padding: 1.1rem 0.8rem 1.5rem 0.8rem;
-    text-decoration: none;
-    border-bottom: 0.1rem solid $Brown-color-light;
-    font-weight: 700;
-    color: $color-grey;
-    transition: all .3s;
-    span {
-        font-size: 4rem;
-        line-height: 0;
-    }
-    &:hover {
-        background-color: $Brown-color-light;
-        color: white;
-    }
-
-}

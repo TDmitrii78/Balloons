@@ -1,0 +1,25 @@
+.btn-text {
+    &:link, &:visited {
+        display: inline-block;
+        background-color: transparent;
+        padding: 1.1rem 0.8rem 1.5rem 0.8rem;
+        text-decoration: none;
+        border-bottom: 0.1rem solid $Brown-color-light;
+        font-weight: 700;
+        color: $color-grey;
+        transition: all .3s;
+    }
+    span {
+        font-size: 4rem;
+        line-height: 0;
+    }
+    &:hover {
+        background-color: $Brown-color-light;
+        color: white;
+        box-shadow: $b-shadow;
+        transform: translateY(-.2rem)
+    }
+    &:active {
+        transform: translateY(0);
+    }
+}
