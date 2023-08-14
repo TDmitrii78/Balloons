@@ -1,0 +1,27 @@
+@mixin adaptation($breakpoint) {
+    @if $breakpoint == 1400 {
+        @media only screen and (max-width: 1400px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 1200 {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 992 {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 768 {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint == 576 {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+} 

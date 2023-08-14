@@ -80,4 +80,12 @@
     &__btn {
         margin-top: 3rem;
     }
+    @include adaptation(768) {
+        &__group-radio {
+            display: block;
+            &:not(:first-child) {
+                margin-top: 2.1rem;
+            }
+        }
+    }
 }

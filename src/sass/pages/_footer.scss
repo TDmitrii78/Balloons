@@ -31,4 +31,13 @@
             transition: all .7s;
         }
     }
+    @include adaptation(768) {
+        &__list-item {
+            display: block;
+            &:not(:first-child) {
+                margin-top: 2rem;
+                margin-left: 0;
+            }
+        }
+    }
 }

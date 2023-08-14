@@ -11,4 +11,16 @@
         gap: 6rem;
         padding: 21.5rem 10rem;
     }
+    @include adaptation(768) {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto auto;
+        }
+    }
+    @include adaptation(576) {
+        &__list {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+        }
+    }
 }

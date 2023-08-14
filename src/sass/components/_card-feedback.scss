@@ -13,6 +13,7 @@
         shape-outside: circle(50% at 50% 50%);
         transition: .3s;
         img {
+            width: 100%;
             transition: all .3s;
         }
         &:hover {
@@ -39,5 +40,17 @@
     }
     &__text {
         margin-top: 1rem;
+    }
+    @include adaptation(768) {
+        &__img {
+            float: unset;
+            margin: 0 auto;
+        }
+        &__three-title {
+            margin-top: 1rem;
+        }
+    }
+    @include adaptation(768) {
+        padding: 5rem 3rem 5rem 3rem;
     }
 }

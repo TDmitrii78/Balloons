@@ -24,4 +24,18 @@
     &__btn-text {
         margin-top: 4.4rem;
     }
+    @include adaptation(576) {
+        padding: 8rem 1rem 5rem 1rem;
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+        &__col-1 {
+            grid-row: 2/3;
+        }
+        &__col-2 {
+            grid-row: 1/2;
+            height: 53rem;
+        }
+    }
 }

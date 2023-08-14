@@ -16,13 +16,14 @@
     &__img {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
         background-color: $Brown-color-light;
+        height: 24.5rem;
         img {
             width: 100%;
             mix-blend-mode: hard-light;
         }
     }  
     &__description {
-        padding: 4.5rem 1rem 5.5rem 1rem;
+        padding: 4.5rem 2rem 5.5rem 2rem;
         text-align: center;
         li {
             display: inline-block;
@@ -72,6 +73,18 @@
         }
         .card-tour__back-side {
             transform: rotateY(0deg);
+        }
+    }
+    @include adaptation(768) {
+        height: 75rem;
+        &__img {
+            height: 45rem;
+        }
+    }
+    @include adaptation(576) {
+        height: 52rem;
+        &__img {
+            height: 24.5rem;
         }
     }
 }

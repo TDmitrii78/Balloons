@@ -42,4 +42,13 @@
     &__btn {
         margin-top: 9.5rem;
     }
+    @include adaptation(576) {
+        padding: 8rem 1rem;
+        &__item {
+            transform: skewX(-5deg);
+        }
+        &__card-feedback {
+            transform: skewX(5deg);
+        }
+    }
 }

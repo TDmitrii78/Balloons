@@ -13,4 +13,7 @@
     &__form {
         margin-top: 3rem;
     }
+    @include adaptation(576) {
+        padding: 1rem;
+    }
 }

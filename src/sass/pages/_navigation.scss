@@ -85,4 +85,14 @@
             text-decoration: none;
         }
     }
+    @include adaptation(576) {
+        &__menu {
+            right: 2rem;
+            top: 2rem;
+        }
+        &__background {
+            right: 3rem;
+            top: 3rem;
+        }
+    }
 }

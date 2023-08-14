@@ -11,4 +11,10 @@
     &__btn {
         margin-top: 8rem;
     }
+    @include adaptation(768) {
+        &__list {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+        }
+    }
 }
