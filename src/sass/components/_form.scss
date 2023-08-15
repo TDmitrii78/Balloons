@@ -24,12 +24,10 @@
         &:placeholder-shown ~ label {
             transform: translateY(-3rem);
             opacity: 0;
-            // visibility: none;
         }
         &:not(:placeholder-shown) ~ label {
             transform: translateY(0);
             opacity: 1;
-            // visibility: visible;
         }
     }
     &__input-label {

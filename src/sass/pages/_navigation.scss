@@ -16,6 +16,15 @@
         &:hover {
             box-shadow: $b-shadow;
             transform: translateY(-.2rem);
+
+        }
+        &:hover > .navigation__hamburger {
+            &::after,&::before {
+                top: 1.3rem;
+            }
+            &::before {
+                top: -1.3rem;
+            }
         }
         &:active {
             transform: translateX(0);
@@ -30,6 +39,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        transition: all .3s;
         &::after,&::before {
             content: '';
             display: block;
@@ -39,9 +49,11 @@
             width: 3rem;
             height: .3rem;
             background-color: black;
+            transition: all .7s;
         }
         &::before {
             top: -1rem;
+            transition: all .7s;
         }
     }  
     &__background {
@@ -63,6 +75,16 @@
         left: 50%;
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
+    }
+    &__checkbox:checked ~ label > .navigation__hamburger {
+        background-color: transparent;
+        &::after,&::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
     }
     &__list {
         position: fixed;
@@ -93,6 +115,17 @@
         &__background {
             right: 3rem;
             top: 3rem;
+        }
+        &__list {
+            width: 100%;
+        }
+        &__item {
+            text-align: center;
+            a {
+                display: block;
+                width: 100%;
+                font-size: 4.4rem;
+            }
         }
     }
 }
