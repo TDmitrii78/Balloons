@@ -105,6 +105,14 @@
             letter-spacing: .5rem;
             color: white;
             text-decoration: none;
+            transition: all .5s;
+            display: inline-block;
+            background: linear-gradient(135deg, transparent 0 50%, white 50% 100%);
+            background-size: 250%;
+            &:hover {
+                color: black;
+                background-position: 100%;
+            }
         }
     }
     @include adaptation(576) {
