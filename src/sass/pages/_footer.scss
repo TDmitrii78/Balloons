@@ -31,12 +31,18 @@
             transition: all .7s;
         }
     }
+        @include adaptation(1200) {
+        &__list-item {
+            &:not(:first-child) {
+                margin-left: 3rem;
+            }
+        }
+    }
     @include adaptation(768) {
         &__list-item {
             display: block;
             &:not(:first-child) {
-                margin-top: 2rem;
-                margin-left: 0;
+                margin: 2rem 0;
             }
         }
     }

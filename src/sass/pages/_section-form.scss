@@ -1,5 +1,5 @@
 .section-form {
-    padding: 10rem;
+    padding: 10rem 0;
     background-image: $gradien-brown-light-brown-darck;
     &__block-form {
         background-image: linear-gradient(110deg, rgba(255, 255, 255, 0.90) 55%, rgba(255, 255, 255, 0) 55%), url('./../img/form-img/form-img.jpg');
@@ -12,8 +12,5 @@
     }
     &__form {
         margin-top: 3rem;
-    }
-    @include adaptation(576) {
-        padding: 1rem;
     }
 }

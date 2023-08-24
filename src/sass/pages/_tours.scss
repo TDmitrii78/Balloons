@@ -1,5 +1,5 @@
 .tours {
-    padding: 8rem 10rem;
+    padding: 8rem 0;
     text-align: center;
     &__list {
         margin-top: 8rem;
@@ -13,8 +13,8 @@
     }
     @include adaptation(768) {
         &__list {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
+            justify-content: center;
+            grid-template-columns: .7fr;
         }
     }
 }

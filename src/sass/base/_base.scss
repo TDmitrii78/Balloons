@@ -12,12 +12,28 @@ body {
     background-color: white;
     padding: 5rem;
     @include adaptation(576) {
-        padding: 1rem;
+        padding: .5rem;
     }
 }
 
-.container {
+.container-outer {
     position: relative;
     background-color: #F7F7F7;
     z-index: 0;
+}
+.container-inner {
+    max-width: 114rem;
+    margin: 0 auto;
+    @include adaptation(1400) {
+        max-width: 100rem;
+    }
+    @include adaptation(992) {
+        max-width: 90rem;
+    }
+    @include adaptation(768) {
+        max-width: 64rem;
+    }
+    @include adaptation(576) {
+       padding: 0 5rem;
+    }
 }

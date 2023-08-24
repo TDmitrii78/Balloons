@@ -5,10 +5,10 @@ html {
     @include adaptation(1400) {
         font-size: 55%;
     }
-    @include adaptation(1200) {
-        font-size: 43%;
-    }
     @include adaptation(992) {
+        font-size: 45%;
+    }
+    @include adaptation(576) {
         font-size: 36%;
     }
 }

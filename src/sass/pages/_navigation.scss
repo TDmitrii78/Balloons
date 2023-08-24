@@ -16,7 +16,6 @@
         &:hover {
             box-shadow: $b-shadow;
             transform: translateY(-.2rem);
-
         }
         &:hover > .navigation__hamburger {
             &::after,&::before {
@@ -117,12 +116,12 @@
     }
     @include adaptation(576) {
         &__menu {
-            right: 2rem;
-            top: 2rem;
+            right: 5.5rem;
+            top: 5.5rem;
         }
         &__background {
-            right: 3rem;
-            top: 3rem;
+            right: 6.5rem;
+            top: 6.5rem;
         }
         &__list {
             width: 100%;

@@ -75,16 +75,4 @@
             transform: rotateY(0deg);
         }
     }
-    @include adaptation(768) {
-        height: 75rem;
-        &__img {
-            height: 45rem;
-        }
-    }
-    @include adaptation(576) {
-        height: 52rem;
-        &__img {
-            height: 24.5rem;
-        }
-    }
 }

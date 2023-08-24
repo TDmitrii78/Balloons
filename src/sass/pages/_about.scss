@@ -1,11 +1,11 @@
 .about {
-    padding: 8rem 10rem 5rem 10rem;
+    padding: 8rem 0 5rem 0;
     &__grid {
         margin-top: 8rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        column-gap: 6.7rem;
+        gap: 6.7rem;
     }
     &__two-title {
         display: block;
@@ -24,18 +24,10 @@
     &__btn-text {
         margin-top: 4.4rem;
     }
-    @include adaptation(576) {
-        padding: 8rem 1rem 5rem 1rem;
+    @include adaptation(768) {
         &__grid {
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto;
-        }
-        &__col-1 {
-            grid-row: 2/3;
-        }
-        &__col-2 {
-            grid-row: 1/2;
-            height: 53rem;
+            grid-template-rows: auto 35rem;
         }
     }
 }
