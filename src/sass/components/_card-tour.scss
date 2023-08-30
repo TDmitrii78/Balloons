@@ -75,4 +75,27 @@
             transform: rotateY(0deg);
         }
     }
+    @include adaptation(992) {
+        .card-tour__btn {
+            width: 24rem;
+        }
+    }
+    @media (max-width: 900px), (hover: none) {
+        height: 75rem;
+        &__front-side {
+            position: static;
+            height: 70%;
+        }
+        &__back-side {
+            padding: 3rem 3.2rem;
+            position: static;
+            transform: rotateY(0);
+            height: 30%;
+        }
+        &:hover {
+            .card-tour__front-side {
+                transform: rotateY(0);
+            }
+        }
+    }
 }

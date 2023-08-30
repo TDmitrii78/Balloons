@@ -16,14 +16,14 @@
             width: 100%;
             transition: all .3s;
         }
-        &:hover {
-            img {
-                filter: blur(.35rem) brightness(70%);
-            }
-            .card-feedback__name {
-                transform: translate(-50%, -50%);
-                opacity: 1;
-            }
+    }
+    &:hover {
+        img {
+            filter: blur(.35rem) brightness(70%);
+        }
+        .card-feedback__name {
+            transform: translate(-50%, -50%);
+            opacity: 1;
         }
     }
     &__name {
